@@ -1,0 +1,52 @@
+logback的使用和logback.xml详解
+http://www.cnblogs.com/warking/p/5710303.html
+
+https://logback.qos.ch/manual/appenders.html
+
+
+logback指定配置文件（二）
+http://www.cnblogs.com/h--d/p/5671528.html
+
+
+<!-- https://mvnrepository.com/artifact/org.logback-extensions/logback-ext-spring -->
+<dependency>
+    <groupId>org.logback-extensions</groupId>
+    <artifactId>logback-ext-spring</artifactId>
+    <version>0.1.4</version>
+</dependency>
+
+
+logback加载外部properties文件
+http://blog.csdn.net/vispin/article/details/50967151
+<property resource="ydyx.properties" />  
+
+
+注意事项：
+1.
+main/resources/
+test/resources/
+这两个目录下不能有两个logback.xml配置文件，即使名字不一样也不行，必须把其中一个移除Test Resources Root。
+2.
+配置邮件标题的properties文件，编码格式需要设置为与项目一致的UTF-8格式，不然会出现乱码。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

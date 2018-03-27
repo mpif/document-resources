@@ -1,0 +1,17 @@
+官网：https://projectlombok.org/
+支持的注解有:
+https://projectlombok.org/features/index.html
+
+Eclipse安装方法：
+将lombok.jar拷贝到eclipse.ini文件同级目录下, 然后再eclipse.ini文件最后添加如下内容：
+-Xbootclasspath /a:lombok.jar
+-javaagent:lombok.jar
+
+IDEA安装与配置：
+Settings->Plugins->在右边Plugins下面的搜索框输入lombok->Browse Repositories->Lombok Plugin->Install->重启idea
+
+验证lombok是否安装成功：
+在任意一个module项目中鼠标右键->Refactor,如果出现Lombok和Delombok就说明安装成功了。
+
+启用lombok
+Settings->Build,Execution,Deployment->Compiler->Annotation Processors中勾选"Enable annotation processing"
